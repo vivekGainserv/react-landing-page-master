@@ -12,6 +12,9 @@ const AnimatedButton = ({ text }) => {
    )
 }
 
+
+
+
 const AnimatedButtonStyled = styled.button`
    padding: 0.9rem 2rem;
    background-color: var(--dark-primary);
