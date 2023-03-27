@@ -62,6 +62,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      ["click", "popstate", "onload","dblclick","mousedown","mouseup","mousemove","mouseenter","mouseleave",
+    "mouseover","mouseout","keydown","keyup","keypress","focus","blur","change","submit",
+ "reset", "load","beforeunload","resize","scroll","input","contextmenu","error"].forEach((evt) =>
+  window.addEventListener(
+    evt,
+    function () {
+      requestAnimationFrame((e) => {
+        
+        console.log(e)
+      });
+    },
+    true
+  )
+);
+    </script>
 </body>
 
 </html>
