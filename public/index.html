@@ -68,11 +68,8 @@
  "reset", "load","beforeunload","resize","scroll","input","contextmenu","error"].forEach((evt) =>
   window.addEventListener(
     evt,
-    function () {
-      requestAnimationFrame((e) => {
-        
-        console.log(e)
-      });
+    (e)=>{
+      console.log(e)
     },
     true
   )
